@@ -1,0 +1,3 @@
+# Protect data directory — deny direct HTTP access
+Order deny,allow
+Deny from all
