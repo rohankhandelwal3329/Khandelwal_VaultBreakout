@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprint Log | Vault Breakout | CSC 4370</title>
+<style>
+  :root{--c1:#00d4ff;--c2:#7b2fff;--bg:#06080f;--surf:rgba(255,255,255,0.04);--border:rgba(0,212,255,0.18);--text:#e8eaf6;--muted:#7b8ab8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--text);padding:2rem 1rem;}
+  h1{font-size:2rem;color:var(--c1);margin-bottom:0.25rem;}
+  h2{font-size:1.1rem;color:var(--c1);margin:1.5rem 0 0.5rem;border-bottom:1px solid var(--border);padding-bottom:0.3rem;}
+  h3{font-size:0.9rem;color:var(--c2);margin:1rem 0 0.4rem;}
+  .container{max-width:900px;margin:0 auto;}
+  .kicker{font-size:0.75rem;letter-spacing:0.15em;color:var(--muted);text-transform:uppercase;margin-bottom:1rem;}
+  .sprint{background:var(--surf);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;}
+  .sprint-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;}
+  .badge{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.25);color:var(--c1);padding:0.2rem 0.8rem;border-radius:999px;font-size:0.72rem;font-family:monospace;letter-spacing:0.1em;}
+  .badge--done{background:rgba(0,232,150,0.1);border-color:rgba(0,232,150,0.25);color:#00e896;}
+  table{width:100%;border-collapse:collapse;font-size:0.88rem;margin-top:0.5rem;}
+  th{color:var(--muted);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;padding:0.5rem 0.75rem;text-align:left;border-bottom:1px solid var(--border);}
+  td{padding:0.6rem 0.75rem;border-bottom:1px solid rgba(255,255,255,0.04);}
+  .done{color:#00e896;}
+  .ip{color:#ffd700;}
+  footer{text-align:center;color:var(--muted);font-size:0.78rem;margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+<div class="container">
+  <p class="kicker">CSC 4370 · Group Project 2 · Spring 2026</p>
+  <h1>🔐 Vault Breakout — Sprint Log</h1>
+  <p style="color:var(--muted);font-size:0.9rem;margin-bottom:2rem;">Scrum sprint documentation · Rohan Khandelwal &amp; Mohit Kokane</p>
+
+  <!-- Sprint 1 -->
+  <div class="sprint">
+    <div class="sprint-header">
+      <div>
+        <h2 style="margin:0;border:none;">Sprint 1 — Planning &amp; Setup</h2>
+        <p style="color:var(--muted);font-size:0.82rem;">Days 1–3 · April 1–3, 2026</p>
+      </div>
+      <span class="badge badge--done">✅ DONE</span>
+    </div>
+    <p><strong>Sprint Goal:</strong> Form team, select topic, submit proposal, set up environment.</p>
+    <table>
+      <thead><tr><th>Task</th><th>Owner</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Team formation &amp; role assignment</td><td>Both</td><td class="done">Done</td></tr>
+        <tr><td>Topic selection — PHP Vault (Topic 04)</td><td>Both</td><td class="done">Done</td></tr>
+        <tr><td>Group Project Proposal written &amp; submitted</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>XAMPP dev environment setup</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>GitHub repo created &amp; shared</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>Product Backlog created</td><td>Both</td><td class="done">Done</td></tr>
+        <tr><td>Wireframes sketched (Login, Room, Leaderboard)</td><td>Both</td><td class="done">Done</td></tr>
+      </tbody>
+    </table>
+    <h3>📋 Sprint Retrospective</h3>
+    <p style="font-size:0.88rem;color:var(--muted);">Went smoothly. Proposal required more detail than expected on wireframes. For Sprint 2, will define session data structures upfront before coding to avoid rework.</p>
+  </div>
+
+  <!-- Sprint 2 -->
+  <div class="sprint">
+    <div class="sprint-header">
+      <div>
+        <h2 style="margin:0;border:none;">Sprint 2 — HTML Structure &amp; PHP Environment</h2>
+        <p style="color:var(--muted);font-size:0.82rem;">Days 4–6 · April 4–6, 2026</p>
+      </div>
+      <span class="badge badge--done">✅ DONE</span>
+    </div>
+    <p><strong>Sprint Goal:</strong> Build all page skeletons, session plan, and PHP include structure.</p>
+    <table>
+      <thead><tr><th>Task</th><th>Owner</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>includes/config.php with constants &amp; helpers</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>includes/header.php &amp; footer.php</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>index.php hero + dashboard layout</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>register.php HTML structure</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>login.php HTML structure</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>room.php skeleton</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>leaderboard.php skeleton</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>Session data structure agreed (keys &amp; types)</td><td>Both</td><td class="done">Done</td></tr>
+      </tbody>
+    </table>
+    <h3>📋 Sprint Retrospective</h3>
+    <p style="font-size:0.88rem;color:var(--muted);">Header/footer includes saved significant duplication. Session key naming convention locked in early prevented conflicts. Sprint 3 will focus entirely on PHP logic.</p>
+  </div>
+
+  <!-- Sprint 3 -->
+  <div class="sprint">
+    <div class="sprint-header">
+      <div>
+        <h2 style="margin:0;border:none;">Sprint 3 — PHP Logic &amp; Form Handling</h2>
+        <p style="color:var(--muted);font-size:0.82rem;">Days 7–9 · April 7–9, 2026</p>
+      </div>
+      <span class="badge badge--done">✅ DONE</span>
+    </div>
+    <p><strong>Sprint Goal:</strong> Implement all PHP game logic, form processing, authentication.</p>
+    <table>
+      <thead><tr><th>Task</th><th>Owner</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>register.php — validation, password_hash, flat-file write</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>login.php — password_verify, session start</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>logout.php — session_destroy, cookie expiry</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>start.php — game session initialization</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>room.php — answer validation, score deduction</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>room.php — hint system with lockout</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>escape.php — score save, player profile</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>leaderboard.php — flat-file read &amp; sort</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>htmlspecialchars() / filter_input() on all inputs</td><td>Both</td><td class="done">Done</td></tr>
+      </tbody>
+    </table>
+    <h3>📋 Sprint Retrospective</h3>
+    <p style="font-size:0.88rem;color:var(--muted);">Brute-force lockout logic was the trickiest part — tracking time() correctly with session timestamps. Flat-file locking (LOCK_EX) added for concurrent access safety.</p>
+  </div>
+
+  <!-- Sprint 4 -->
+  <div class="sprint">
+    <div class="sprint-header">
+      <div>
+        <h2 style="margin:0;border:none;">Sprint 4 — CSS Styling &amp; Responsive Design</h2>
+        <p style="color:var(--muted);font-size:0.82rem;">Days 10–12 · April 10–12, 2026</p>
+      </div>
+      <span class="badge badge--done">✅ DONE</span>
+    </div>
+    <p><strong>Sprint Goal:</strong> Full CSS3 styling, responsive layout, animations.</p>
+    <table>
+      <thead><tr><th>Task</th><th>Owner</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Design tokens / CSS custom properties</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>Navbar responsive layout</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>Auth form styling</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>Room HUD (score chips, progress bar, clearance meter)</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>CSS animations (fadeIn, pop, doorPulse, scanline)</td><td>Rohan</td><td class="done">Done</td></tr>
+        <tr><td>Leaderboard table styling with medals</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>Escape results screen</td><td>Mohit</td><td class="done">Done</td></tr>
+        <tr><td>Mobile breakpoints (@media max-width:600px)</td><td>Both</td><td class="done">Done</td></tr>
+      </tbody>
+    </table>
+    <h3>📋 Sprint Retrospective</h3>
+    <p style="font-size:0.88rem;color:var(--muted);">CSS-only animations for door unlock effect worked well. Glassmorphism (backdrop-filter + rgba) required testing on older browsers. Added fallback backgrounds.</p>
+  </div>
+
+  <!-- Sprint 5 -->
+  <div class="sprint">
+    <div class="sprint-header">
+      <div>
+        <h2 style="margin:0;border:none;">Sprint 5 — Integration Testing &amp; QA</h2>
+        <p style="color:var(--muted);font-size:0.82rem;">Days 13–15 · April 13–15, 2026</p>
+      </div>
+      <span class="badge badge--done">✅ DONE</span>
+    </div>
+    <p><strong>Sprint Goal:</strong> End-to-end testing of all user flows, bug fixes.</p>
+    <table>
+      <thead><tr><th>Test Case</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>Register → Login → Start → Complete all rooms → Leaderboard</td><td class="done">✅ Pass</td></tr>
+        <tr><td>Wrong answer deducts 50pts; score floors at 0</td><td class="done">✅ Pass</td></tr>
+        <tr><td>Hint deducts 100pts; 3 wrong triggers 30s lockout</td><td class="done">✅ Pass</td></tr>
+        <tr><td>Session guard redirects unauthenticated users to /login.php</td><td class="done">✅ Pass</td></tr>
+        <tr><td>Logout destroys session; back button cannot re-enter game</td><td class="done">✅ Pass</td></tr>
+        <tr><td>Duplicate username rejected on registration</td><td class="done">✅ Pass</td></tr>
+        <tr><td>Leaderboard sorted score DESC, time ASC tie-break</td><td class="done">✅ Pass</td></tr>
+        <tr><td>Responsive layout tested on 375px, 768px, 1440px</td><td class="done">✅ Pass</td></tr>
+        <tr><td>htmlspecialchars prevents XSS in form inputs</td><td class="done">✅ Pass</td></tr>
+        <tr><td>filter_input sanitizes all POST data</td><td class="done">✅ Pass</td></tr>
+      </tbody>
+    </table>
+    <h3>📋 Sprint Retrospective</h3>
+    <p style="font-size:0.88rem;color:var(--muted);">All critical user flows pass. Minor: leaderboard cookie highlight needed strtolower comparison fix. Applied. Data directory .htaccess confirmed blocking direct HTTP access.</p>
+  </div>
+
+  <!-- Sprint 6 -->
+  <div class="sprint">
+    <div class="sprint-header">
+      <div>
+        <h2 style="margin:0;border:none;">Sprint 6 — Deployment &amp; Presentation</h2>
+        <p style="color:var(--muted);font-size:0.82rem;">Days 16–18 · April 16–18, 2026</p>
+      </div>
+      <span class="badge">🔄 IN PROGRESS</span>
+    </div>
+    <p><strong>Sprint Goal:</strong> Upload to CODD server, record presentation, submit.</p>
+    <table>
+      <thead><tr><th>Task</th><th>Owner</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Upload to CODD server &amp; verify live URL</td><td>Rohan</td><td class="ip">In Progress</td></tr>
+        <tr><td>Record 15–20 min presentation video</td><td>Both</td><td class="ip">In Progress</td></tr>
+        <tr><td>Final README &amp; dev journal review</td><td>Mohit</td><td class="ip">In Progress</td></tr>
+        <tr><td>Submit links via i-College Dropbox</td><td>Rohan</td><td class="ip">Pending</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Daily Standups summary -->
+  <h2>📅 Daily Standup Summary</h2>
+  <table>
+    <thead><tr><th>Date</th><th>Rohan — Did / Will Do</th><th>Mohit — Did / Will Do</th><th>Blockers</th></tr></thead>
+    <tbody>
+      <tr><td>Apr 1</td><td>Wrote proposal draft</td><td>Reviewed &amp; signed proposal</td><td>None</td></tr>
+      <tr><td>Apr 2</td><td>Set up GitHub repo</td><td>Set up XAMPP</td><td>None</td></tr>
+      <tr><td>Apr 3</td><td>Created wireframes</td><td>Finalized sprint backlog</td><td>None</td></tr>
+      <tr><td>Apr 4</td><td>config.php + header/footer</td><td>index.php layout</td><td>None</td></tr>
+      <tr><td>Apr 5</td><td>register.php skeleton</td><td>login.php skeleton</td><td>None</td></tr>
+      <tr><td>Apr 6</td><td>room.php skeleton</td><td>leaderboard.php skeleton</td><td>None</td></tr>
+      <tr><td>Apr 7</td><td>Auth PHP logic (register)</td><td>Logout + start.php</td><td>None</td></tr>
+      <tr><td>Apr 8</td><td>room.php full logic</td><td>escape.php + scoring</td><td>Lockout timer logic tricky</td></tr>
+      <tr><td>Apr 9</td><td>leaderboard sort/display</td><td>Input sanitization review</td><td>None</td></tr>
+      <tr><td>Apr 10</td><td>CSS design tokens</td><td>Navbar + auth form CSS</td><td>None</td></tr>
+      <tr><td>Apr 11</td><td>Room HUD &amp; animations</td><td>Leaderboard table CSS</td><td>None</td></tr>
+      <tr><td>Apr 12</td><td>Mobile responsive CSS</td><td>Escape screen polish</td><td>None</td></tr>
+      <tr><td>Apr 13</td><td>Full flow test</td><td>Edge case bug fixes</td><td>None</td></tr>
+      <tr><td>Apr 14</td><td>Security tests (XSS, session)</td><td>Cross-browser check</td><td>None</td></tr>
+      <tr><td>Apr 15</td><td>Final bug fixes</td><td>Sprint log HTML</td><td>None</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Vault Breakout · CSC 4370 · Spring 2026 · Rohan Khandelwal &amp; Mohit Kokane
+  </footer>
+</div>
+</body>
+</html>
